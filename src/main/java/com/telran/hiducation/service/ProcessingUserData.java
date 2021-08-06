@@ -28,7 +28,7 @@ public class ProcessingUserData {
         // Get the object stored in the database by email
         Optional<UserEntity> userEntity = userRepository.findById(email);
         // Check contains object data
-        if (userEntity.isEmpty()) {
+        if (!userEntity.isPresent()) {
             throw new UsernameNotFoundException(String.format("User with email: %s not found", email));
         }
         return userEntity.get();

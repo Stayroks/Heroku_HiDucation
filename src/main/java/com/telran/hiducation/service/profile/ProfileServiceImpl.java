@@ -75,7 +75,7 @@ public class ProfileServiceImpl implements ProfileService {
     private void saveAppToCollection(Principal principal, UserEntity userEntity, UserProfileDto userDto) {
         Collection<ApplicationEntity> applications = userEntity.getApplications();
         // **************************************
-        if (applications.isEmpty()) {
+        if (applications.size() == 0) {
             System.out.println("Privet");
         }
         // **************************************

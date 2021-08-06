@@ -30,7 +30,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserEntity> userEntity = userRepository.findById(username);
-        if (userEntity.isEmpty()) {
+        if (!userEntity.isPresent()) {
             throw new UsernameNotFoundException("User not found");
         }
         UserEntity user = userEntity.get();

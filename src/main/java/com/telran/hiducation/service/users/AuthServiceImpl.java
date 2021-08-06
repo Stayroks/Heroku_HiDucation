@@ -58,7 +58,7 @@ public class AuthServiceImpl implements AuthService {
             role = roleRepository.findByName(ROLE_USER.name());
         }
         // If the user is not in the database
-        if (user.isEmpty()) {
+        if (!user.isPresent()) {
             // We fill in the model for saving to the database
             UserEntity userEntity = UserEntity.builder()
                 .email(credentials.getEmail())

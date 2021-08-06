@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="add files" />
+    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="add files">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/ProcessingUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/ProcessingUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/profile/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/profile/ProfileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/users/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/users/AuthServiceImpl.java" afterDir="false" />
+    </list>
     <list id="54011348-4f98-4f34-83b0-73cf910030fe" name="NotPush" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -130,8 +135,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/pojo/dto/ProductItemExamDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/pojo/dto/ProductProgressDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/HiducationApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/config/AppConfig.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/config/SecurityConfig.class" afterDir="false" />
@@ -296,7 +299,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628231752256</updated>
-      <workItem from="1628231760249" duration="2799000" />
+      <workItem from="1628231760249" duration="3221000" />
     </task>
     <task id="LOCAL-00001" summary="refresh files">
       <created>1628231991474</created>
@@ -326,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628234764536</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add files">
+      <created>1628235057475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628235057475</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
