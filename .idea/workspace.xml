@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="change isEmpty to isPresent">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="change Identity -&gt; auto" />
     <list id="54011348-4f98-4f34-83b0-73cf910030fe" name="NotPush" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -296,7 +294,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628231752256</updated>
-      <workItem from="1628231760249" duration="4214000" />
+      <workItem from="1628231760249" duration="4565000" />
     </task>
     <task id="LOCAL-00001" summary="refresh files">
       <created>1628231991474</created>
@@ -340,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628235263191</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change Identity -&gt; auto">
+      <created>1628236570281</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628236570281</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +368,7 @@
     <MESSAGE value="update java version from 11 to 8" />
     <MESSAGE value="add files" />
     <MESSAGE value="change isEmpty to isPresent" />
-    <option name="LAST_COMMIT_MESSAGE" value="change isEmpty to isPresent" />
+    <MESSAGE value="change Identity -&gt; auto" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Identity -&gt; auto" />
   </component>
 </project>

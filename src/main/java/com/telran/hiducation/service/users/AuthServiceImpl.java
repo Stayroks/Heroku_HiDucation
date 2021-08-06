@@ -17,6 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -51,19 +52,22 @@ public class AuthServiceImpl implements AuthService {
         // By default, we assign all users the USER role
         // Get the USER role from the repository
         RoleEntity role = roleRepository.findByName(ROLE_USER.name());
+        ArrayList<RoleEntity> roleList = new ArrayList<>();
+
         // If the role has not been added yet, add to the repository
         if (role == null) {
             roleRepository.save(RoleEntity.builder().name(ROLE_USER.name()).build());
             // We take out the entity and assign the value
             role = roleRepository.findByName(ROLE_USER.name());
         }
+        roleList.add(role);
         // If the user is not in the database
         if (!user.isPresent()) {
             // We fill in the model for saving to the database
             UserEntity userEntity = UserEntity.builder()
                 .email(credentials.getEmail())
                 .password(passwordEncoder.encode(credentials.getPassword()))
-                .roles(List.of(role))
+                .roles(roleList)
                 .accountConfirmed(false)
                 .build();
 
