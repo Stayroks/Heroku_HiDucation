@@ -4,8 +4,226 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="refresh properties and pom">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="add files" />
+    <list id="54011348-4f98-4f34-83b0-73cf910030fe" name="NotPush" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_69.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_31_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_3_38_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/pojo/dto/ProductItemExamDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/pojo/dto/ProductProgressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/HiducationApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/products/ApplicationsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/products/ApplicationsControllerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/statistics/StatisticsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/statistics/StatisticsControllerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/users/AuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/users/AuthControllerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/users/ProfileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/controller/users/ProfileControllerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/dao/products/ApplicationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/dao/statistics/AppsExamRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/dao/statistics/AppsExerciseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/dao/statistics/AppsTheoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/dao/users/RoleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/dao/users/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/emails/SendEmail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/enums/Roles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/exceptions/DuplicateExceptionDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/exceptions/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/exceptions/NotFoundExceptionDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/exceptions/UsernameDuplicateException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppExamOrderDto$AppExamOrderDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppExamOrderDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppExerciseOrderDto$AppExerciseOrderDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppExerciseOrderDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppRootDto$AppRootDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppRootDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppStatisticExamDto$AppStatisticExamDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppStatisticExamDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppStatisticExercisesDto$AppStatisticExercisesDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppStatisticExercisesDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppStatisticTheoryDto$AppStatisticTheoryDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/AppStatisticTheoryDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ErrorDto$ErrorDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ErrorDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/PasswordResetDto$PasswordResetDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/PasswordResetDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductExerciseLevelDto$ProductExerciseLevelDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductExerciseLevelDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductInfoDto$ProductInfoDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductInfoDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductItemExamDto$ProductItemExamDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductItemExamDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductItemExerciseDto$ProductItemExerciseDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductItemExerciseDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductProgressDto$ProductProgressDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ProductProgressDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ResponseSuccessDto$ResponseSuccessDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/ResponseSuccessDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/UserCredentialsDto$UserCredentialsDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/UserCredentialsDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/UserProfileDto$UserProfileDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/dto/UserProfileDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/AppExamEntity$AppExamEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/AppExamEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/AppExerciseEntity$AppExerciseEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/AppExerciseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/ApplicationEntity$ApplicationEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/ApplicationEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/BasicEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/RoleEntity$RoleEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/RoleEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/StatisticExamEntity$StatisticExamEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/StatisticExamEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/StatisticExerciseEntity$StatisticExerciseEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/StatisticExerciseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/StatisticTheoryEntity$StatisticTheoryEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/StatisticTheoryEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/UserCredentialsEntity$UserCredentialsEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/UserCredentialsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/UserEntity$UserEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/pojo/entity/UserEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/security/CustomUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/security/filter/JwtAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/security/filter/JwtAuthorizationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/ProcessingUserData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/apps/ApplicationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/apps/ApplicationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/profile/ProfileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/profile/ProfileServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/statistics/StatisticsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/statistics/StatisticsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/users/AuthService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/service/users/AuthServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/telran/hiducation/utills/ProcessHashcode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hiducation-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/hiducation-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +236,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
       </map>
     </option>
@@ -46,6 +268,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HiducationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hiducation" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.telran.hiducation.HiducationApplication" />
@@ -58,11 +291,12 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="" />
+      <changelist id="54011348-4f98-4f34-83b0-73cf910030fe" name="NotPush" comment="" />
       <created>1628231752256</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628231752256</updated>
-      <workItem from="1628231760249" duration="1960000" />
+      <workItem from="1628231760249" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="refresh files">
       <created>1628231991474</created>
@@ -78,7 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628232818088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update java version from 11 to 8">
+      <created>1628233982566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628233982567</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add files">
+      <created>1628234764536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628234764536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +346,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refresh files" />
     <MESSAGE value="refresh properties and pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh properties and pom" />
+    <MESSAGE value="update java version from 11 to 8" />
+    <MESSAGE value="add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files" />
   </component>
 </project>
