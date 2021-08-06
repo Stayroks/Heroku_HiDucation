@@ -30,7 +30,7 @@ public interface ApplicationsController {
                     responseCode =  "201",
                     description = "Application has been successfully added to the database",
                     content = @Content(
-                            schema = @Schema(implementation = ResponseSuccessDto.class)
+                            schema = @Schema(implementation = AppRootDto.class)
                     )
             ),
             @ApiResponse(
