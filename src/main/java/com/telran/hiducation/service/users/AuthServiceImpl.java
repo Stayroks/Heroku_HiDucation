@@ -9,10 +9,10 @@ import com.telran.hiducation.pojo.dto.ResponseSuccessDto;
 import com.telran.hiducation.pojo.dto.UserCredentialsDto;
 import com.telran.hiducation.pojo.entity.RoleEntity;
 import com.telran.hiducation.pojo.entity.UserEntity;
+import com.telran.hiducation.service.ProcessingUserData;
 import com.telran.hiducation.utills.ProcessHashcode;
 import lombok.AllArgsConstructor;
 import org.springframework.core.env.Environment;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -29,6 +29,7 @@ public class AuthServiceImpl implements AuthService {
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
+    private final ProcessingUserData userData;
     private final Environment environment;
     private final SendEmail sendEmail;
     private final ProcessHashcode processHashcode;
@@ -60,11 +61,12 @@ public class AuthServiceImpl implements AuthService {
         if (user.isEmpty()) {
             // We fill in the model for saving to the database
             UserEntity userEntity = UserEntity.builder()
-                    .email(credentials.getEmail())
-                    .password(passwordEncoder.encode(credentials.getPassword()))
-                    .roles(List.of(role))
-                    .accountConfirmed(false)
-                    .build();
+                .email(credentials.getEmail())
+                .password(passwordEncoder.encode(credentials.getPassword()))
+                .roles(List.of(role))
+                .accountConfirmed(false)
+                .build();
+
             // Saving the model to the repository
             userRepository.save(userEntity);
         }
@@ -84,7 +86,7 @@ public class AuthServiceImpl implements AuthService {
         // Decode the hash
         String email = processHashcode.decodeHash(hash);
         // Get the user stored in the database by the email
-        UserEntity user = getUserByEmail(email);
+        UserEntity user = userData.getUserByEmail(email);
         // Set to TRUE confirmation email registration
         user.setAccountConfirmed(true);
         // Refresh user data
@@ -95,10 +97,8 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public ResponseSuccessDto replacePassword(Principal principal, PasswordResetDto passwordResetDto) {
-        // Get the email of the user
-        String email = principal.getName();
         // Get the object stored in the database by the email
-        UserEntity userEntity = getUserByEmail(email);
+        UserEntity userEntity = userData.getUserByPrincipal(principal);
         // Get the old password provided by the user
         String rawPassword = passwordResetDto.getOldPassword();
         // Get the old password from database
@@ -113,18 +113,6 @@ public class AuthServiceImpl implements AuthService {
         userRepository.save(userEntity);
         return ResponseSuccessDto.builder().message("Password changed successfully").build();
     }
-
-    private UserEntity getUserByEmail(String email) {
-        if (email == null) {
-            throw new UsernameNotFoundException("User not found");
-        }
-        Optional<UserEntity> userEntity = userRepository.findById(email);
-        if (userEntity.isEmpty()) {
-            throw new UsernameNotFoundException(String.format("User with email: %s not found", email));
-        }
-        return userEntity.get();
-    }
-
 
     private String getAppHost() {
         return environment.getProperty("app.host.url") + environment.getProperty("server.port");

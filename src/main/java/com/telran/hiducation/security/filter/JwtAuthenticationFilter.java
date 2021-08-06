@@ -41,8 +41,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 new UsernamePasswordAuthenticationToken(
                         body.getEmail(),
                         body.getPassword(),
-                        new ArrayList<>()
-                )
+                        new ArrayList<>())
         );
     }
 
@@ -50,12 +49,12 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {
         String username = ((User) authResult.getPrincipal()).getUsername();
         String secretKey = environment.getProperty("token.secret.key");
-        SignatureAlgorithm algorithm = SignatureAlgorithm.ES512;
+        SignatureAlgorithm algorithm = SignatureAlgorithm.HS512;
         SecretKey key = Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8));
         String token = Jwts.builder()
                 .setSubject(username)
                 .setExpiration(new Date(System.currentTimeMillis() + Long.parseLong(environment.getProperty("token.ttl")) * 60 * 24))
-                .signWith(key,algorithm)
+                .signWith(key, algorithm)
                 .compact();
         response.addHeader("Token", token);
     }

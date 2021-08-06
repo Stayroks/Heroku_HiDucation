@@ -80,37 +80,37 @@ public interface AuthController {
     )
     ResponseEntity confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
 
-//    @PostMapping("${endpoint.url.user.login}")
-//    @Operation(
-//            summary = "Login and retrieve an user token",
-//            description = ""
-//    )
-//    @ApiResponses({
-//            @ApiResponse(
-//                    responseCode =  "200",
-//                    description = "RThe authorization field in the HTTP header returns a token for passing the user's credentials",
-//                    content = @Content(
-//                            schema = @Schema(implementation = ResponseSuccessDto.class)
-//                    )
-//            ),
-//            @ApiResponse(
-//                    responseCode =  "400",
-//                    description = "<b>Invalid email or password format:</b>" +
-//                            "</br>Email must contain one @ symbol and at least 2 characters after the last dot." +
-//                            "</br>Password must contain at least 8 characters",
-//                    content = @Content(
-//                            schema = @Schema(implementation = ErrorDto.class)
-//                    )
-//            ),
-//            @ApiResponse(
-//                    responseCode =  "401",
-//                    description = " “Unauthorized” response returned for requests with missing or incorrect credentials",
-//                    content = @Content(
-//                            schema = @Schema(implementation = ErrorDto.class)
-//                    )
-//            )
-//    })
-//    void userLogin(@RequestBody @Valid UserCredentialsDto credentialsDto);
+    @PostMapping("${endpoint.url.user.login}")
+    @Operation(
+            summary = "Login and retrieve an user token",
+            description = "Login and retrieve an user token"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode =  "200",
+                    description = "The authorization field in the HTTP header returns a token for passing the user's credentials",
+                    content = @Content(
+                            schema = @Schema(implementation = ResponseSuccessDto.class)
+                    )
+            ),
+            @ApiResponse(
+                    responseCode =  "400",
+                    description = "<b>Invalid email or password format:</b>" +
+                            "</br>Email must contain one @ symbol and at least 2 characters after the last dot." +
+                            "</br>Password must contain at least 8 characters",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorDto.class)
+                    )
+            ),
+            @ApiResponse(
+                    responseCode =  "401",
+                    description = " “Unauthorized” response returned for requests with missing or incorrect credentials",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorDto.class)
+                    )
+            )
+    })
+    void userLogin(@RequestBody @Valid UserCredentialsDto credentialsDto);
 
     @PutMapping(value = "${endpoint.url.password.reset}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
     @Operation(summary = "Change user password", description = "Updating password when user fill form with new password")
@@ -124,12 +124,12 @@ public interface AuthController {
                             )
                     ),
                     @ApiResponse(
-                            responseCode =  "400",
-                            description = "<b>Invalid email or password format:</b>" +
-                                    "</br>Email must contain one @ symbol and at least 2 characters after the last dot." +
-                                    "</br>Password must contain at least 8 characters",
-                            content = @Content(
-                                    schema = @Schema(implementation = ErrorDto.class)
+                    responseCode =  "400",
+                    description = "<b>Invalid email or password format:</b>" +
+                            "</br>Email must contain one @ symbol and at least 2 characters after the last dot." +
+                            "</br>Password must contain at least 8 characters",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorDto.class)
                             )
                     ),
                     @ApiResponse(

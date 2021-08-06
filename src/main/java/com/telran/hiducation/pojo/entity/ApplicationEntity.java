@@ -2,9 +2,8 @@ package com.telran.hiducation.pojo.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,5 +22,11 @@ public class ApplicationEntity extends BasicEntity {
 
     @Column(name = "field")
     private String field;
+
+    @OneToMany(mappedBy = "application", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    List<AppExerciseEntity> exercise;
+
+    @OneToMany(mappedBy = "application", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    List<AppExamEntity> exam;
 
 }

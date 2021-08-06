@@ -1,27 +1,101 @@
 package com.telran.hiducation.controller.users;
 
-import com.telran.hiducation.dao.users.UserRepository;
-import com.telran.hiducation.pojo.entity.UserEntity;
+import com.telran.hiducation.pojo.dto.ErrorDto;
+import com.telran.hiducation.pojo.dto.ResponseSuccessDto;
+import com.telran.hiducation.pojo.dto.UserProfileDto;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.security.Principal;
 
-@RestController
+import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
+
 @Tag(name = "Users")
-@RequestMapping("user")
-public class ProfileController {
+@RequestMapping("${endpoint.url.user.controller}")
+public interface ProfileController {
 
-    private final UserRepository userRepository;
+    @GetMapping(produces = APPLICATION_JSON_VALUE)
+    @Operation(
+            summary = "Get user profile",
+            description = "Get all user data")
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Displays user data",
+                            content = @Content(
+                                    schema = @Schema(implementation = UserProfileDto.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode =  "400",
+                            description = "<b>Invalid email or password format:</b>" +
+                                    "</br>Email must contain one @ symbol and at least 2 characters after the last dot." +
+                                    "</br>Password must contain at least 8 characters",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorDto.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode =  "401",
+                            description = " “Unauthorized” response returned for requests with missing or incorrect credentials",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorDto.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "User with this email is not registered",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorDto.class)
+                            )
+                    )
+            }
+    )
+    ResponseEntity getUserProfile(Principal principal);
 
-    public ProfileController(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+    @PutMapping(produces = APPLICATION_JSON_VALUE)
+    @Operation(
+            summary = "Update user profile",
+            description = "Refresh user data"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Data update was successful",
+                            content = @Content(
+                                    schema = @Schema(implementation = ResponseSuccessDto.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode =  "401",
+                            description = " “Unauthorized” response returned for requests with missing or incorrect credentials",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorDto.class)
+                            )
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "User with this email is not registered",
+                            content = @Content(
+                                    schema = @Schema(implementation = ErrorDto.class)
+                            )
+                    )
+            }
+    )
+    ResponseEntity updateProfile(Principal principal, @RequestBody UserProfileDto userDto);
 
-//    @GetMapping("all")
-//    public List<UserEntity> getAll(){
-//        return userRepository.getAllUsers();
-//    }
+
+//    @DeleteMapping("{email}")
+//    void delete(@PathVariable String email);
+
+
 }
+

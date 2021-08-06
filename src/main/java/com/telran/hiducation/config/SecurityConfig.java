@@ -4,8 +4,8 @@ import com.telran.hiducation.dao.users.UserRepository;
 import com.telran.hiducation.security.CustomUserDetailsService;
 import com.telran.hiducation.security.filter.JwtAuthenticationFilter;
 import com.telran.hiducation.security.filter.JwtAuthorizationFilter;
+import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -17,13 +17,12 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+@AllArgsConstructor
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    private UserRepository userRepository;
-    @Autowired
-    private Environment environment;
+    private final UserRepository userRepository;
+    private final Environment environment;
 
     @Bean
     public UserDetailsService userDetailsService() {
@@ -54,6 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("user/registration").permitAll()
                 .antMatchers("user/registration/{hash}").permitAll()
+                .antMatchers("/applications/**").permitAll()
 //                .mvcMatchers("user/{userEmail}").hasRole("ADMIN")
 //                .mvcMatchers("user/password/reset").hasRole("USER")
 //                .antMatchers( "user/all").hasRole("USER")

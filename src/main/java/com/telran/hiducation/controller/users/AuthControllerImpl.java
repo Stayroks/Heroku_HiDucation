@@ -45,11 +45,11 @@ public class AuthControllerImpl implements AuthController{
         return new ResponseEntity(service.replacePassword(principal, passwordResetDto), HttpStatus.OK);
     }
 
-//    @Override
-//    public void userLogin(@RequestBody @Valid UserCredentialsDto credentialsDto) {
-//        // We transfer user credentials to the service
-//        // If everything went well, it returns a token
-//    }
+    @Override
+    public void userLogin(@RequestBody @Valid UserCredentialsDto credentialsDto) {
+        // We transfer user credentials to the service
+        // If everything went well, it returns a token
+    }
 
 //    @GetMapping("logout")
 //    public void userLogout() {

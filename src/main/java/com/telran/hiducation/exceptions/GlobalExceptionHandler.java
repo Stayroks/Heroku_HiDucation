@@ -10,11 +10,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.validation.ConstraintViolation;
@@ -38,7 +36,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                         .collect(Collectors.toMap(e -> (
                                         (e instanceof FieldError) ? ((FieldError) e).getField() : e.getObjectName()),
                                 DefaultMessageSourceResolvable::getDefaultMessage))
-                )
+
+                        )
                 .build();
         return new ResponseEntity<>(errorMessageDto, HttpStatus.BAD_REQUEST);
     }
@@ -77,21 +76,22 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 
     @ExceptionHandler(value = {
-            UsernameNotFoundException.class
+            UsernameNotFoundException.class,
     })
     public ResponseEntity<Object> handleNotFoundException(AuthenticationException ex, WebRequest request) {
         ErrorDto<String> errorDto = ErrorDto.<String>builder()
                 .timestamp(LocalDateTime.now())
-                .status(HttpStatus.NOT_FOUND.value())
-                .error(HttpStatus.NOT_FOUND.getReasonPhrase())
+                .status(HttpStatus.UNAUTHORIZED.value())
+                .error(HttpStatus.UNAUTHORIZED.getReasonPhrase())
                 .path(((ServletWebRequest) request).getRequest().getRequestURI())
                 .message(ex.getMessage())
                 .build();
-        return new ResponseEntity<>(errorDto, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(errorDto, HttpStatus.UNAUTHORIZED);
     }
 
     @ExceptionHandler(value = {
-            UsernameDuplicateException.class
+            UsernameDuplicateException.class,
+            DuplicateExceptionDto.class
     })
     public ErrorDto<String> handleCustomConflictException(RuntimeException ex, WebRequest request) {
         return ErrorDto.<String>builder()
