@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="add files">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/security/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/ProcessingUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/ProcessingUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/profile/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/profile/ProfileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/users/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/telran/hiducation/service/users/AuthServiceImpl.java" afterDir="false" />
+    <list default="true" id="bcd7dc19-63d9-4662-a538-9f9c7e7ea1fc" name="Default Changelist" comment="change isEmpty to isPresent">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="54011348-4f98-4f34-83b0-73cf910030fe" name="NotPush" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -246,8 +243,8 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Inspector" value="true" />
-        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="true" />
       </map>
     </option>
@@ -299,7 +296,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628231752256</updated>
-      <workItem from="1628231760249" duration="3221000" />
+      <workItem from="1628231760249" duration="4214000" />
     </task>
     <task id="LOCAL-00001" summary="refresh files">
       <created>1628231991474</created>
@@ -336,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628235057475</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change isEmpty to isPresent">
+      <created>1628235263191</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628235263191</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +362,7 @@
     <MESSAGE value="refresh properties and pom" />
     <MESSAGE value="update java version from 11 to 8" />
     <MESSAGE value="add files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+    <MESSAGE value="change isEmpty to isPresent" />
+    <option name="LAST_COMMIT_MESSAGE" value="change isEmpty to isPresent" />
   </component>
 </project>
