@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.security.Principal;
 
+@CrossOrigin("*")
 @Tag(name = "Users", description = "Operations with users")
 @RequestMapping("${endpoint.url.user.controller}")
 @Validated
