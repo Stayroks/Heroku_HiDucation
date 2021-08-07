@@ -53,7 +53,7 @@ public interface ApplicationsController {
     })
     ResponseEntity<?> addApplication(@RequestBody  AppRootDto dto);
 
-    @PostMapping("{appName}")
+    @PostMapping("{userEmail}/{appName}")
     @Operation(
             summary = "Add application to user",
             description = "Add an application to the user by the name of the application"

@@ -4,6 +4,7 @@ import com.telran.hiducation.dao.users.UserRepository;
 import com.telran.hiducation.pojo.dto.PasswordResetDto;
 import com.telran.hiducation.pojo.dto.UserCredentialsDto;
 import com.telran.hiducation.service.users.AuthService;
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -59,9 +60,10 @@ public class AuthControllerImpl implements AuthController{
 
 
 
-//    @DeleteMapping("{userEmail}")
-//    public void deleteUser(@PathVariable @Email String userEmail) {
-//        userRepository.removeUser(userEmail);
-//    }
+    @Hidden
+    @DeleteMapping("{userEmail}")
+    public void deleteUser(@PathVariable @Email String userEmail) {
+        userRepository.deleteById(userEmail);
+    }
 
 }
