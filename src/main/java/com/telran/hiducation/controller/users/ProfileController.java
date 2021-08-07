@@ -20,7 +20,7 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 @RequestMapping("${endpoint.url.user.controller}")
 public interface ProfileController {
 
-    @GetMapping(produces = APPLICATION_JSON_VALUE)
+    @GetMapping(value = "{userEmail}", produces = APPLICATION_JSON_VALUE)
     @Operation(
             summary = "Get user profile",
             description = "Get all user data")
@@ -60,7 +60,7 @@ public interface ProfileController {
     )
     ResponseEntity getUserProfile(Principal principal);
 
-    @PutMapping(produces = APPLICATION_JSON_VALUE)
+    @PutMapping(value = "{userEmail}", produces = APPLICATION_JSON_VALUE)
     @Operation(
             summary = "Update user profile",
             description = "Refresh user data"
@@ -93,8 +93,8 @@ public interface ProfileController {
     ResponseEntity updateProfile(Principal principal, @RequestBody UserProfileDto userDto);
 
 
-//    @DeleteMapping("{email}")
-//    void delete(@PathVariable String email);
+//    @DeleteMapping("{userEmail}")
+//    void delete(@PathVariable String userEmail);
 
 
 }

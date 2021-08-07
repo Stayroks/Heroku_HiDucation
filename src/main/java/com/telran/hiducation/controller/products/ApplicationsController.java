@@ -23,14 +23,15 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public interface ApplicationsController {
 
 
-    @PostMapping(produces = APPLICATION_JSON_VALUE)
+//    @PostMapping(produces = APPLICATION_JSON_VALUE)
+    @PostMapping()
     @Operation(summary = "Add a new application")
     @ApiResponses({
             @ApiResponse(
                     responseCode =  "201",
                     description = "Application has been successfully added to the database",
                     content = @Content(
-                            schema = @Schema(implementation = AppRootDto.class)
+                            schema = @Schema(implementation = ResponseSuccessDto.class)
                     )
             ),
             @ApiResponse(
@@ -50,7 +51,7 @@ public interface ApplicationsController {
                     )
             )
     })
-    ResponseEntity<?> addApplication(@RequestBody AppRootDto dto);
+    ResponseEntity<?> addApplication(@RequestBody  AppRootDto dto);
 
     @PostMapping("{appName}")
     @Operation(

@@ -14,28 +14,28 @@ import java.security.Principal;
 @RequestMapping("${endpoint.url.statistics.controller}")
 public interface StatisticsController {
 
-    @PutMapping()
+    @PutMapping("{studentId}")
     ResponseEntity<?> updateStatisticsApp(Principal principal, @RequestBody AppRootDto appDto);
 
-    @PutMapping("theory")
+    @PutMapping("{studentId}/theory")
     ResponseEntity<?> updateStatisticsTheory(Principal principal, @RequestBody AppStatisticTheoryDto theoryDto);
 
-    @PutMapping("exercises")
+    @PutMapping("{studentId}/exercises")
     ResponseEntity<?> updateStatisticsExercises(Principal principal, @RequestBody AppStatisticExercisesDto exercisesDto);
 
-    @PutMapping("exam")
+    @PutMapping("{studentId}/exam")
     ResponseEntity<?> updateStatisticsExam(Principal principal, @RequestBody AppStatisticExamDto examDto);
 
-    @GetMapping("{appId}")
+    @GetMapping("{studentId}/{appId}")
     ResponseEntity<?> getStatisticsApp(Principal principal, @PathVariable String appId);
 
-    @GetMapping("{appId}/theory")
+    @GetMapping("{studentId}/{appId}/theory")
     ResponseEntity<?> getStatisticsTheory(Principal principal, @PathVariable String appId);
 
-    @GetMapping("{appId}/exercises")
+    @GetMapping("{studentId}/{appId}/exercises")
     ResponseEntity<?> getStatisticsExercises(Principal principal, @PathVariable String appId);
 
-    @GetMapping("{appId}/exam")
+    @GetMapping("{studentId}/{appId}/exam")
     ResponseEntity<?> getStatisticsExam(Principal principal, @PathVariable String appId);
 
 }

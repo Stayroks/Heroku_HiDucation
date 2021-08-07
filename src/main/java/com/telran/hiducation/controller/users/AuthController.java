@@ -112,7 +112,7 @@ public interface AuthController {
     })
     void userLogin(@RequestBody @Valid UserCredentialsDto credentialsDto);
 
-    @PutMapping(value = "${endpoint.url.password.reset}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "{userEmail}/${endpoint.url.password.reset}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
     @Operation(summary = "Change user password", description = "Updating password when user fill form with new password")
     @ApiResponses(
             value = {
