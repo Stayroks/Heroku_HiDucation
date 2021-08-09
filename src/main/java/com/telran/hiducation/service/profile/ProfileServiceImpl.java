@@ -28,9 +28,9 @@ public class ProfileServiceImpl implements ProfileService {
     private final ModelMapper mapper;
 
     @Override
-    public UserProfileDto getProfile(Principal principal) {
+    public UserProfileDto getProfile(String userEmail) {
         // Get user entity
-        UserEntity user = userData.getUserByPrincipal(principal);
+        UserEntity user = userData.getUserByEmail(userEmail);
         return mapper.map(user, UserProfileDto.class);
     }
 

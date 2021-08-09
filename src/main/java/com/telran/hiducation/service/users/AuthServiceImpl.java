@@ -119,7 +119,8 @@ public class AuthServiceImpl implements AuthService {
     }
 
     private String getAppHost() {
-        return environment.getProperty("app.host.url") + environment.getProperty("server.port");
+//        return environment.getProperty("app.host.url") + environment.getProperty("server.port");
+        return environment.getProperty("app.host.url");
     }
 
     private String createUrlRegistration() {

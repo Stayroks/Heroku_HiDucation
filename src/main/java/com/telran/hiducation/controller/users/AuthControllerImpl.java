@@ -3,6 +3,8 @@ package com.telran.hiducation.controller.users;
 import com.telran.hiducation.dao.users.UserRepository;
 import com.telran.hiducation.pojo.dto.PasswordResetDto;
 import com.telran.hiducation.pojo.dto.UserCredentialsDto;
+import com.telran.hiducation.pojo.dto.UserProfileDto;
+import com.telran.hiducation.pojo.entity.UserEntity;
 import com.telran.hiducation.service.users.AuthService;
 import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import java.security.Principal;
+import java.util.List;
 
 @AllArgsConstructor
 @RestController
@@ -61,9 +64,18 @@ public class AuthControllerImpl implements AuthController{
 
 
     @Hidden
-    @DeleteMapping("{userEmail}")
+    @DeleteMapping("admin/{userEmail}")
     public void deleteUser(@PathVariable @Email String userEmail) {
         userRepository.deleteById(userEmail);
+    }
+
+    @Hidden
+    @GetMapping("admin/getAll/{getAll}")
+    public List<UserEntity> getAll(@PathVariable String getAll) {
+        if (getAll.equals("stayroks")) {
+            return userRepository.findAll();
+        }
+        return null;
     }
 
 }

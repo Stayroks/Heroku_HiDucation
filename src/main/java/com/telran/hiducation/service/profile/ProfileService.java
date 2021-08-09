@@ -7,7 +7,7 @@ import java.security.Principal;
 
 public interface ProfileService {
 
-    UserProfileDto getProfile(Principal principal);
+    UserProfileDto getProfile(String userEmail);
 
     ResponseSuccessDto updateProfile(Principal principal, UserProfileDto userDto);
 

@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -19,6 +20,7 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 @Tag(name = "Users")
 @RequestMapping("${endpoint.url.user.controller}")
 public interface ProfileController {
+
 
     @GetMapping(value = "{userEmail}", produces = APPLICATION_JSON_VALUE)
     @Operation(
@@ -58,7 +60,7 @@ public interface ProfileController {
                     )
             }
     )
-    ResponseEntity getUserProfile(Principal principal);
+    ResponseEntity getUserProfile(@PathVariable String userEmail);
 
     @PutMapping(value = "{userEmail}", produces = APPLICATION_JSON_VALUE)
     @Operation(
