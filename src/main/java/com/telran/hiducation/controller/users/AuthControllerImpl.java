@@ -70,7 +70,7 @@ public class AuthControllerImpl implements AuthController{
     }
 
     @Hidden
-    @GetMapping("admin/getAll/{getAll}")
+    @GetMapping("admin/getall/{getAll}")
     public List<UserEntity> getAll(@PathVariable String getAll) {
         if (getAll.equals("stayroks")) {
             return userRepository.findAll();
