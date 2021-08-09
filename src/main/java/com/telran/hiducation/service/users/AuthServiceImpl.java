@@ -96,7 +96,7 @@ public class AuthServiceImpl implements AuthService {
         // Refresh user data
         userRepository.save(user);
         return ResponseSuccessDto.builder()
-                .message("redirect:/user/login").build();
+                .message("redirect:https://serene-headland-70350.herokuapp.com/").build();
     }
 
     @Override
