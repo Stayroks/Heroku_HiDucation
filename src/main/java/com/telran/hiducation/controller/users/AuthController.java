@@ -58,7 +58,8 @@ public interface AuthController {
     })
     ResponseEntity registration(@RequestBody @Valid UserCredentialsDto body);
 
-    @GetMapping(value = "${endpoint.url.user.registration}/{hash}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "${endpoint.url.user.registration}/{hash}")
+//    @GetMapping(value = "${endpoint.url.user.registration}/{hash}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
     @Operation(summary = "Activate user account",
             description = "Marks user account is activated")
     @ApiResponses(
