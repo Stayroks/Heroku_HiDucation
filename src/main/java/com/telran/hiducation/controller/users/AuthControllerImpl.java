@@ -47,7 +47,7 @@ public class AuthControllerImpl implements AuthController{
     @Override
     public String confirmRegistrationRelink(String hash) {
         service.confirmRegistration(hash);
-        return "registration";
+        return "confirmemail";
     }
 
     @Override
