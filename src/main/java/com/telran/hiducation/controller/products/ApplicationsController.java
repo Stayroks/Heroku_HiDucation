@@ -18,6 +18,7 @@ import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
+@CrossOrigin("*")
 @Tag(name = "Applications", description = "All products (applications) hiMathGaming")
 @RequestMapping("${endpoint.url.applications.controller}")
 public interface ApplicationsController {

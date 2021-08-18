@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 
+@CrossOrigin("*")
 @Tag(name = "Statistics")
 @RequestMapping("${endpoint.url.statistics.controller}")
 public interface StatisticsController {

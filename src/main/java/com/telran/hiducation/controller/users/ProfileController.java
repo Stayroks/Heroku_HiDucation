@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
-
+@CrossOrigin("*")
 @Tag(name = "Users")
 @RequestMapping("${endpoint.url.user.controller}")
 public interface ProfileController {
