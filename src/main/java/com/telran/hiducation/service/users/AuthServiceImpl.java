@@ -96,7 +96,7 @@ public class AuthServiceImpl implements AuthService {
         // Refresh user data
         userRepository.save(user);
         return ResponseSuccessDto.builder()
-                .message("redirect:/").build();
+                .message("redirect:/index.html").build();
     }
 
     @Override
