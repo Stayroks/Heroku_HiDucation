@@ -81,7 +81,7 @@ public interface AuthController {
             }
     )
 //    ResponseEntity confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
-    String confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
+    String confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") @RequestParam(name = "hash", required = false, defaultValue = "index") String hash);
 
     @PostMapping("${endpoint.url.user.login}")
     @Operation(
