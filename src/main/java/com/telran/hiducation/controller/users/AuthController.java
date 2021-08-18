@@ -58,8 +58,8 @@ public interface AuthController {
     })
     ResponseEntity registration(@RequestBody @Valid UserCredentialsDto body);
 
-    @RequestMapping(value = "${endpoint.url.user.registration}/{hash}")
-//    @GetMapping(value = "${endpoint.url.user.registration}/{hash}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
+
+    @GetMapping(value = "${endpoint.url.user.registration}/{hash}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
     @Operation(summary = "Activate user account",
             description = "Marks user account is activated")
     @ApiResponses(
@@ -80,8 +80,10 @@ public interface AuthController {
                     )
             }
     )
-//    ResponseEntity confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
-    String confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") @RequestParam(name = "hash", required = false, defaultValue = "index") String hash);
+    ResponseEntity confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
+
+    @RequestMapping(value = "${endpoint.url.user.registration}")
+    String confirmRegistrationRelink(@RequestParam(name = "hash", required = false, defaultValue = "index") String hash);
 
     @PostMapping("${endpoint.url.user.login}")
     @Operation(
