@@ -24,7 +24,8 @@ public interface AuthService {
      * @param hash encoded email
      * @return String (redirect to the logging page)
      */
-    ResponseSuccessDto confirmRegistration(String hash);
+    String confirmRegistration(String hash);
+//    ResponseSuccessDto confirmRegistration(String hash);
 
     /**
      *

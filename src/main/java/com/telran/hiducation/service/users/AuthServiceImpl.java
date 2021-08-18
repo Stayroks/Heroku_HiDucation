@@ -86,7 +86,8 @@ public class AuthServiceImpl implements AuthService {
 
 
     @Override
-    public ResponseSuccessDto confirmRegistration(String hash) {
+    public String confirmRegistration(String hash) {
+//    public ResponseSuccessDto confirmRegistration(String hash) {
         // Decode the hash
         String email = processHashcode.decodeHash(hash);
         // Get the user stored in the database by the email
@@ -95,8 +96,9 @@ public class AuthServiceImpl implements AuthService {
         user.setAccountConfirmed(true);
         // Refresh user data
         userRepository.save(user);
-        return ResponseSuccessDto.builder()
-                .message("index").build();
+//        return ResponseSuccessDto.builder()
+//                .message("index").build();
+        return "index";
     }
 
     @Override
