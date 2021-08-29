@@ -59,31 +59,31 @@ public interface AuthController {
     ResponseEntity registration(@RequestBody @Valid UserCredentialsDto body);
 
 
-    @GetMapping(value = "${endpoint.url.user.registration}/{hash}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
-    @Operation(summary = "Activate user account",
-            description = "Marks user account is activated")
-    @ApiResponses(
-            value = {
-                    @ApiResponse(
-                            responseCode = "200",
-                            description = "Registration completed successfully. Redirecting the user to the login page",
-                            content = @Content(
-                                    schema = @Schema(implementation = ResponseSuccessDto.class)
-                            )
-                    ),
-                    @ApiResponse(
-                            responseCode = "404",
-                            description = "User with this email is not registered",
-                            content = @Content(
-                                    schema = @Schema(implementation = ErrorDto.class)
-                            )
-                    )
-            }
-    )
-    ResponseEntity confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
+//    @GetMapping(value = "${endpoint.url.user.registration}/{hash}", produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
+//    @Operation(summary = "Activate user account",
+//            description = "Marks user account is activated")
+//    @ApiResponses(
+//            value = {
+//                    @ApiResponse(
+//                            responseCode = "200",
+//                            description = "Registration completed successfully. Redirecting the user to the login page",
+//                            content = @Content(
+//                                    schema = @Schema(implementation = ResponseSuccessDto.class)
+//                            )
+//                    ),
+//                    @ApiResponse(
+//                            responseCode = "404",
+//                            description = "User with this email is not registered",
+//                            content = @Content(
+//                                    schema = @Schema(implementation = ErrorDto.class)
+//                            )
+//                    )
+//            }
+//    )
+//    ResponseEntity confirmRegistration(@PathVariable @Parameter(description = "User's encoded email") String hash);
 
-    @RequestMapping(value = "${endpoint.url.user.registration}/confirm")
-    String confirmRegistrationRelink(@RequestParam(name = "hash", required = false, defaultValue = "index") String hash);
+//    @RequestMapping(value = "${endpoint.url.user.registration}/confirm")
+//    String confirmRegistrationRelink(@RequestParam(name = "hash", required = false, defaultValue = "index") String hash);
 
     @PostMapping("${endpoint.url.user.login}")
     @Operation(

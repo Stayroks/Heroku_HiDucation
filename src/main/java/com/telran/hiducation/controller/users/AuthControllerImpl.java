@@ -37,18 +37,18 @@ public class AuthControllerImpl implements AuthController{
         return new ResponseEntity(service.createNewUser(body), HttpStatus.CREATED);
     }
 
-    @Override
-    public ResponseEntity confirmRegistration(@PathVariable String hash) {
-        // We pass the hash to the service.
-        // If the registration was successful, we return the link to the login
-        return new ResponseEntity(service.confirmRegistration(hash), HttpStatus.PERMANENT_REDIRECT);
-    }
-
-    @Override
-    public String confirmRegistrationRelink(String hash) {
-        service.confirmRegistration(hash);
-        return "confirmemail";
-    }
+//    @Override
+//    public ResponseEntity confirmRegistration(@PathVariable String hash) {
+//        // We pass the hash to the service.
+//        // If the registration was successful, we return the link to the login
+//        return new ResponseEntity(service.confirmRegistration(hash), HttpStatus.PERMANENT_REDIRECT);
+//    }
+//
+//    @Override
+//    public String confirmRegistrationRelink(String hash) {
+//        service.confirmRegistration(hash);
+//        return "confirmemail";
+//    }
 
     @Override
     public ResponseEntity resetPassword(Principal principal, PasswordResetDto passwordResetDto) {
