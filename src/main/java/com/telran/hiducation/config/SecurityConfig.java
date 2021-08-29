@@ -75,7 +75,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
                 .and()
                 .cors().configurationSource(corsConfigurationSource())
         ;
-        http.cors();
     }
 
     @SneakyThrows
@@ -95,7 +94,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
         final CorsConfiguration configuration = new CorsConfiguration();
 
 //        configuration.setAllowedOrigins(Arrays.asList("*"));
-        configuration.setAllowedOrigins(Collections.singletonList("*")); // <-- you may change "*"
+        configuration.setAllowedOrigins(Collections.singletonList("https://serene-headland-70350.herokuapp.com/")); // <-- you may change "*"
 //        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedMethods(Arrays.asList("HEAD", "GET", "POST", "PUT", "DELETE", "PATCH"));
         configuration.setAllowCredentials(true);
@@ -112,10 +111,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
     }
 
 
-//    @Override
-//    public void addCorsMappings(CorsRegistry registry) {
-//        registry.addMapping("/**")
-////                .allowedOrigins("*")
-//                .allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
-//    }
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("https://serene-headland-70350.herokuapp.com/")
+                .allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
+    }
 }
