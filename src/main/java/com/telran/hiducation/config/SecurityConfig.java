@@ -114,7 +114,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://serene-headland-70350.herokuapp.com/")
+                .allowedOrigins("https://serene-headland-70350.herokuapp.com/", "192.168.43.209")
                 .allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
     }
 }
